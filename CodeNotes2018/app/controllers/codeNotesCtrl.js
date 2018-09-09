@@ -9,7 +9,6 @@
             'uiGridConstants',
             'codeNotesService',
             '$ocModal',
-            //'toastr',
             codeNotesCtrl]);
 
     function codeNotesCtrl($scope, $http, $location, uiGridConstants, codeNotesService, $ocModal) {
@@ -39,6 +38,7 @@
                         name: 'CodeNotationsId',
                         visible: false
                     }, {
+                        visible: true,
                         name: 'NotationName',
                         displayName: 'Name',
                         enableCellEdit: true,
@@ -143,26 +143,18 @@
         vm.loadData = function () {
             vm.codenotes = {};
             vm.ViewModel = {};
-            //var dlg = bootbox.dialog({
-            //    message: '<div class="text-center"><i class="fa fa-spin fa-spinner"></i> Loading...</div>'
-            //});
-            //dlg.init(function () {
-            //    setTimeout(function () {
-            //        dlg.modal('hide');
-            //    }, 3000);
 
-            //    vm.data.GetCodeNotes().then(function (data) {
-            //        vm.codenotes = data;
-            //        vm.gridOptionsCodeNotes.data = vm.codenotes.data;
-            //    });
-            //});
+            vm.data.GetCodeNotes().then(function (data) {
+                vm.codenotes = data;
+                vm.gridOptionsCodeNotes.data = vm.codenotes.data;
+            });
         }
 
         vm.addNew = function () {
             vm.showModal2();
         }
 
-        vm.showModal2 = function () {
+        vm.showModal2 = function (value) {
             $ocModal.open({
                 url: 'app/views/codeNotesEdit.html',
                 controller: 'codeNotesEditCtrl'
@@ -174,9 +166,7 @@
                 if (results === true) {
                     vm.loadData();
                     vm.gridOptionsCodeNotes.gridApi.core.notifyDataChange(uiGridConstants.dataChange.ALL);
-                } else {
-                    //toastr.error('An error has occured deleting the record: ');
-                }
+                } 
             });
         };
 
@@ -209,9 +199,23 @@
             //});
         }
 
-        vm.editCodeNote = function (value) {
+        vm.editItem = function (value) {
             console.log('Edit: ' + value.NotationName);
+            console.log('ID: ' + value.CodeNotationsId);
+            vm.setSelectedField(value);
+            $ocModal.open({
+                url: 'app/views/codeNotesEdit.html',
+                controller: 'codeNotesEditCtrl',
+                init: {
+                    CodeNotationsId: vm.ViewModel.CodeNotationsId,
+                    NotationName: vm.ViewModel.NotationName,
+                    NotationDescription: vm.ViewModel.NotationDescription,
+                    CodeSnippet: vm.ViewModel.CodeSnippet,
+                    NotationURL: vm.ViewModel.NotationURL
+                }
+            });
         }
+
         vm.setSelectedField = function (value) {
             vm.ViewModel.CodeNotationsId = value.CodeNotationsId;
             vm.ViewModel.NotationName = value.NotationName;
@@ -236,9 +240,7 @@
                     if (results === true) {
                         vm.loadData();
                         //toastr.info('Record Saved.');
-                    } else {
-                        //toastr.error('An error has occured saving the new record: ');
-                    }
+                    } 
                 });
             }
         };

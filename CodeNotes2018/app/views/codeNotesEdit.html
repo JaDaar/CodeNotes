@@ -1,14 +1,4 @@
-﻿<style>
-
-</style>
-<script type="text/javascript">
-    $('#myModal')
-        .on('shown.bs.modal',
-            function () {
-                $('#myInput').focus();
-            })
-</script>
-<div ng-controller="codeNotesEditCtrl as vm" ng-init="vm.init()">
+﻿<div ng-controller="codeNotesEditCtrl as vm" ng-init="vm.init()">
     <!--<a href="#/create" class="btn">Create</a>-->
     <div class="container-fluid">
         <div class="modal-body" style="text-align: left;margin: 0px !important; padding: 0px !important; width: 100%;">
@@ -24,8 +14,9 @@
                             <label class="col-md-2 control-label">
                                 CodeNote
                             </label>
+                            <!--<pre>{{vm.VModel|json}}</pre>-->
                             <div class="col-md-10">
-                                <input type="text" class="form-control" id="txtName" data-ng-model="vm.NotationName" placeholder="Name" />
+                                <input type="text" class="form-control" id="txtName" data-ng-model="vm.VModel.NotationName" placeholder="Name" />
                             </div>
                         </div>
                     </div>

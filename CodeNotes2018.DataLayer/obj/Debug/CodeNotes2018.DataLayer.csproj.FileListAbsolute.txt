@@ -1,0 +1,14 @@
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\NLog.config
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\CodeNotes2018.DataLayer.dll.config
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\CodeNotes2018.DataLayer.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\CodeNotes2018.DataLayer.pdb
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\EntityFramework.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\NLog.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\EntityFramework.xml
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\bin\Debug\NLog.xml
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2018.DataLayer.csproj.CoreCompileInputs.cache
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2018.DataLayer.csproj.CopyComplete
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2018.DataLayer.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2018.DataLayer.pdb

@@ -1,9 +1,4 @@
-D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.IO.Compression.dll
-D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\VBCSCompiler.exe
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\NLog.config
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\CodeNotes2018.dll.config
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\CodeNotes2018.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\CodeNotes2018.pdb
@@ -14,9 +9,13 @@ D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\csi.exe
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\csi.exe.config
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\csi.rsp
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.VisualBasic.Core.targets
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\Microsoft.Win32.Primitives.dll
@@ -26,6 +25,7 @@ D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.Console.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.Diagnostics.Process.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.IO.Compression.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.IO.FileSystem.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.IO.FileSystem.Primitives.dll
@@ -48,7 +48,9 @@ D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\System.Xml.XPath.XD
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\vbc.exe
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\vbc.exe.config
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\vbc.rsp
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\VBCSCompiler.exe
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\roslyn\VBCSCompiler.exe.config
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\CodeNotes2018.DataLayer.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\EntityFramework.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\EntityFramework.SqlServer.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -56,6 +58,9 @@ D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\Newtonsoft.Json.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\System.Net.Http.Formatting.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\System.Web.Http.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\System.Web.Http.WebHost.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\NLog.dll
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\CodeNotes2018.DataLayer.pdb
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\CodeNotes2018.DataLayer.dll.config
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\EntityFramework.xml
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\EntityFramework.SqlServer.xml
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\Newtonsoft.Json.xml
@@ -63,8 +68,9 @@ D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\System.Net.Http.Formatting
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\System.Web.Http.xml
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\System.Web.Http.WebHost.xml
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\bin\NLog.xml
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\obj\Debug\CodeNotes2018.csprojAssemblyReference.cache
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\obj\Debug\CodeNotes2018.csproj.CoreCompileInputs.cache
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\obj\Debug\CodeNotes2018.csproj.CopyComplete
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\obj\Debug\CodeNotes2018.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\obj\Debug\CodeNotes2018.pdb
-D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018\obj\Debug\CodeNotes2018.csprojAssemblyReference.cache
