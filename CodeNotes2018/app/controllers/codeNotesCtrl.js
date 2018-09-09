@@ -211,7 +211,8 @@
                     NotationName: vm.ViewModel.NotationName,
                     NotationDescription: vm.ViewModel.NotationDescription,
                     CodeSnippet: vm.ViewModel.CodeSnippet,
-                    NotationURL: vm.ViewModel.NotationURL
+                    NotationURL: vm.ViewModel.NotationURL,
+                    Action:'Edit'
                 }
             });
         }

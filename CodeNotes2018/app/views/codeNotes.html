@@ -1,39 +1,18 @@
 ﻿<style>
-    .cnGrid {
-        width: auto;
-        height: auto;
-        margin: 10px;
-    }
 
-    .tbone {
-        color: #FFCC00;
-        background-color: #000033 !important;
-    }
-
-    .blue {
-        color: #0033FF;
-    }
-
-    .darkRed {
-        color: #660000;
-    }
-
-    .orange {
-        color: #FF6600;
-    }
 </style>
 <div ng-controller="codeNotesCtrl as vm" ng-init="vm.init()">
-    
-    <div class="col-md-12">
+    <div class="row col-md-12 label label-success">Welcome to CodeNotes2018</div>
+    <div class="col-md-12  panel-heading">
         <div class="row">
             <div class="col-md-6 pull-left">
                 <button class="btn btn-primary col-md-2 pull-left" style="padding-left: 0px !important;margin-left:0px !important" data-toggle="modal" ng-click="vm.addNew(vm)"> &nbsp;Create&nbsp;</button>
-                <a class="btn btn-primary btn-info col-md-2 pull-left" style="margin-left: 5px !important;" ng-click="vm.addEditCodeNotes(vm)"> Info</a>
+                <!--<a class="btn btn-primary btn-info col-md-2 pull-left" style="margin-left: 5px !important;" ng-click="vm.addEditCodeNotes(vm)"> Info</a>-->
             </div>
         </div>
     </div>
     <!--<pre>{{vm.gridOptionsCodeNotes.data|json}}</pre>-->
-    <table st-table="vm.gridOptionsCodeNotes.data" class="table table-striped">
+    <table st-table="vm.gridOptionsCodeNotes.data" class="table table-striped layout display responsive-table">
         <thead>
             <tr>
                 <th>Note</th>
@@ -41,35 +20,26 @@
                 <th>URL</th>
                 <th>Code Snippet</th>
                 <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="row in vm.gridOptionsCodeNotes.data">
                 <td>{{row.NotationName}}</td>
                 <td>{{row.NotationDescription}}</td>
-                <td>{{row.NotationURL}}</td>
+                <td><a ng-href="row.NotationURL" target="=_blank">{{row.NotationURL}}</a></td>
                 <td>{{row.CodeSnippet}}</td>
-                <td>
-                    <button type="button" ng-click="vm.editItem(row)" class="btn btn-sm btn-info ">
-                        <i class="glyphicon glyphicon-edit">
-                        </i>
-                    </button>
-                </td>
-                <td>
-                    <button type="button" ng-click="vm.removeItem(row)" class="btn btn-sm btn-danger">
-                        <i class="glyphicon glyphicon-remove-circle">
-                        </i>
-                    </button>
-                </td>
+                <td><button type="button" ng-click="vm.editItem(row)" class="btn btn-sm btn-success "><i class="glyphicon glyphicon-edit"></i></button></td>
+                <td><button type="button" ng-click="vm.removeItem(row)" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove-circle"></i></button></td>
             </tr>
         </tbody>
-        <tfoot>
+        <!--<tfoot>
             <tr>
                 <td colspan="4" class="text-center">
                     <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
                 </td>
             </tr>
-        </tfoot>
+        </tfoot>-->
     </table>
     <!--<div id="gridCodeNotes" ui-grid="vm.gridOptionsCodeNotes" external-scopes="vm" ui-grid-edit ui-grid-cellnav class="row col-md-12 cnGrid"></div>-->
 </div>

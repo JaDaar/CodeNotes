@@ -8,7 +8,7 @@
         var vm = this;
 
         vm.data = '';
-
+        vm.Action = 'Create';
         vm.sort = 0;
         vm.VModel = {};
 
@@ -22,13 +22,15 @@
                         CodeSnippet: $scope.CodeSnippet,
                         NotationURL: $scope.NotationURL,
                         UpdateDate: moment().format("MM/DD/YYYY"),
-                        StatusCode: 'A'
+                        StatusCode: 'A',
+                        Action: $scope.Action
                     }
                     vm.CodeNotationsId =vm.VModel.CodeNotationsId;
                     vm.NotationName =vm.VModel.NotationName !== null &&vm.VModel.NotationName !== undefined ?vm.VModel.NotationName : '';
                     vm.NotationDescription =vm.VModel.NotationDescription !== null &&vm.VModel.NotationDescription !== undefined ?vm.VModel.NotationDescription:'';
                     vm.CodeSnippet =vm.VModel.CodeSnippet !== null &&vm.VModel.CodeSnippet !== undefined ?vm.VModel.CodeSnippet : '';
-                    vm.NotationURL =vm.VModel.NotationURL !== null &&vm.VModel.NotationURL !== undefined ?vm.VModel.NotationURL : '';
+                    vm.NotationURL = vm.VModel.NotationURL !== null && vm.VModel.NotationURL !== undefined ? vm.VModel.NotationURL : '';
+                    vm.Action = vm.VModel.Action;
                 }
             });
         vm.init = function () {
