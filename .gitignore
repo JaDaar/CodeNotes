@@ -1,0 +1,6 @@
+/$tf
+/.vs
+*.pdb
+db.lock
+*.tmp
+*.vssscc

@@ -1,0 +1,54 @@
+﻿<style>
+    .cnGrid {
+        width: auto;
+        height: 600px;
+        margin: 10px;
+    }
+
+    .tbone {
+        color: #FFCC00;
+        background-color: #000033 !important;
+    }
+
+    .blue {
+        color: #0033FF;
+    }
+
+    .darkRed {
+        color: #660000;
+    }
+
+    .orange {
+        color: #FF6600;
+    }
+</style>
+<script type="text/javascript">
+    $('#myModal')
+        .on('shown.bs.modal',
+            function() {
+                $('#myInput').focus();
+            });
+
+
+</script>
+<div ng-controller="codeNotesCtrl as vm" ng-init="vm.init()">
+    <!--<a href="#/create" class="btn">Create</a>-->
+    <div class="col-md-12">
+        <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+        <div class="row">
+            <div class="col-md-6 pull-left">
+                <!--<button class="btn btn-primary pull-left" style="padding: 0.5em;" data-ng-click="vm.someFunction(selectedRecord)"><i class="fa fa-file-o"></i> &nbsp;Create&nbsp;</button>-->
+                <button class="btn btn-primary col-md-2 pull-left" style="padding-left: 0px !important;margin-left:0px !important" data-toggle="modal" ng-click="vm.addNew(vm)"> &nbsp;Create&nbsp;</button>
+                <!--<button class="btn btn-primary col-md-2 pull-left" style="padding-left: 0px !important;margin-left:5px !important" ng-click="vm.setSelectedField()"><i class="icon-remove-sign"></i> &nbsp;Delete&nbsp;</button>-->
+                <!--<button class="btn btn-primary col-md-2 pull-left" style="margin-left: 5px !important;" data-toggle="modal" ng-click="vm.openBase()"><i class="icon-reorder"></i> &nbsp;Base Grid&nbsp;</button>-->
+                <a class="btn btn-primary btn-info col-md-2 pull-left" style="margin-left: 5px !important;" ng-click="vm.addEditCodeNotes(vm)"> Info</a>
+            </div>
+        </div>
+
+
+    <!-- Angular UI Binding-->
+    <!--<pre>{{vm|json}}</pre>-->
+
+    <!--<div id="gridCodeNotes" ui-grid="vm.gridOptionsCodeNotes" external-scopes="vm" ui-grid-edit ui-grid-cellnav class="row col-md-12 cnGrid"></div>-->
+
+</div>
