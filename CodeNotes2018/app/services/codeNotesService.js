@@ -35,9 +35,22 @@
             });
             return deferred.promise;
         }
+
+        var updateCodeNote = function (data) {
+            var deferred = $q.defer();
+            $http.put('/api/codenote/', data).then(function () {
+                deferred.resolve(true);
+            }, function () {
+                alert("error");
+                deferred.reject();
+            });
+            return deferred.promise;
+        }
+
         return {
             GetCodeNotes: getCodeNotes,
             DeleteCodeNote: deleteCodeNote,
-            SaveCodeNotes: saveCodeNote
+            SaveCodeNotes: saveCodeNote,
+            UpdateCodeNote: updateCodeNote
         }
     }]);

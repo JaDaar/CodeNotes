@@ -28,13 +28,23 @@ namespace CodeNotes2018.Controllers
         }
 
         // POST: api/CodeNote
-        [ActionName("post"), HttpPost]
-        public void Post(CodeNotation product)
+        [ActionName("AddNew"), HttpPost]
+        public void AddNew(CodeNotation product)
         {
             if (ModelState.IsValid)
             {
                 iProp.Add(product);
             }
+        }
+
+        // PUT: api/CodeNote
+        [ActionName("Update"), HttpPut]
+        public void Update(CodeNotation product)
+        {
+            //if (ModelState.IsValid)
+            //{
+                iProp.Update(product);
+            //}
         }
 
         // PUT: api/CodeNote/5

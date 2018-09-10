@@ -108,6 +108,7 @@
     <Content Include="Content\ocModal.full.min.css" />
     <Content Include="Content\ocModal.light.css" />
     <Content Include="Content\ocModal.light.min.css" />
+    <Content Include="Content\script.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="Content\ui-grid.css" />

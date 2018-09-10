@@ -213,6 +213,9 @@
                     CodeSnippet: vm.ViewModel.CodeSnippet,
                     NotationURL: vm.ViewModel.NotationURL,
                     Action:'Edit'
+                },
+                onClose: function () {
+                    vm.loadData();
                 }
             });
         }

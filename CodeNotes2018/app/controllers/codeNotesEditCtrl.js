@@ -2,9 +2,9 @@
     'use strict';
     var controllerId = 'codeNotesEditCtrl';
 
-    angular.module('codeNotes').controller(controllerId, ['$ocModal', '$scope',codeNotesEditCtrl]);
+    angular.module('codeNotes').controller(controllerId, ['$ocModal', '$scope', 'codeNotesService',codeNotesEditCtrl]);
 
-    function codeNotesEditCtrl($ocModal, $scope) {
+    function codeNotesEditCtrl($ocModal, $scope,codeNotesService) {
         var vm = this;
 
         vm.data = '';
@@ -41,7 +41,12 @@
             vm.SaveChanges("Saved successfully", false);
         }
 
-        vm.saveClose = function () {
+        vm.saveClose = function (codeNoteValue) {
+            console.log(codeNoteValue.CodeNotationsId);
+            codeNoteValue.StatusCode = 'A';
+            codeNotesService.UpdateCodeNote(codeNoteValue).then(function() {
+
+            });
             vm.SaveChanges("Saved successfully", true);
         }
 

@@ -12,3 +12,4 @@ D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2018.DataLayer.csproj.CopyComplete
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2018.DataLayer.dll
 D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2018.DataLayer.pdb
+D:\AppDev\git.repo\ng\CodeNotes2018\CodeNotes2018.DataLayer\obj\Debug\CodeNotes2018.DataLayer.csprojAssemblyReference.cache
