@@ -14,5 +14,8 @@ those gems or items I want to save and reuse again.
 This version will save information into SQL Server.  
 It is written using AngularJS.
 
-##Future Versions
-Android Version
+Future Versions
+---------------
+* Android Version
+* IoS Version
+* Angular Version
