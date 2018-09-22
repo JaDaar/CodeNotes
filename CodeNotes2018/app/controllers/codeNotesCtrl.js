@@ -4,6 +4,7 @@
     angular.module('codeNotes').controller(controllerId,
         [
             '$scope',
+            '$rootScope',
             '$http',
             '$location',
             'uiGridConstants',
@@ -11,7 +12,7 @@
             '$ocModal',
             codeNotesCtrl]);
 
-    function codeNotesCtrl($scope, $http, $location, uiGridConstants, codeNotesService, $ocModal) {
+    function codeNotesCtrl($scope, $rootScope, $http, $location, uiGridConstants, codeNotesService, $ocModal) {
         var vm = this;
         vm.data = codeNotesService;
         vm.sort = 0;
@@ -30,6 +31,9 @@
         }
         vm.selectedCodeNotationsId = 0;
         vm.gridOptionsCodeNotes = {};
+
+        
+
 
         vm.gridOptionsCodeNotes =
             {
@@ -200,6 +204,8 @@
         }
 
         vm.editItem = function (value) {
+            $rootScope.$emit('routePage', 'search');
+            $rootScope.$broadcast('rootScope:broadcast', value);
             console.log('Edit: ' + value.NotationName);
             console.log('ID: ' + value.CodeNotationsId);
             vm.setSelectedField(value);

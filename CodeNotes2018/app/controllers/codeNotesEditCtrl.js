@@ -2,9 +2,9 @@
     'use strict';
     var controllerId = 'codeNotesEditCtrl';
 
-    angular.module('codeNotes').controller(controllerId, ['$ocModal', '$scope', 'codeNotesService',codeNotesEditCtrl]);
+    angular.module('codeNotes').controller(controllerId, ['$ocModal', '$scope','$rootScope', 'codeNotesService',codeNotesEditCtrl]);
 
-    function codeNotesEditCtrl($ocModal, $scope,codeNotesService) {
+    function codeNotesEditCtrl($ocModal, $scope, $rootScope,codeNotesService) {
         var vm = this;
 
         vm.data = '';
@@ -36,6 +36,13 @@
         vm.init = function () {
             
         }
+
+        $rootScope.$on('routePage', function (event, data) {
+            console.log(data);
+        });
+        $rootScope.$on('rootScope:broadcast', function (event, data) {
+            console.log('OBJ2: ' + data.NotationName); // 'Broadcast!'
+        });
 
         vm.save = function (close) {
             vm.SaveChanges("Saved successfully", false);
