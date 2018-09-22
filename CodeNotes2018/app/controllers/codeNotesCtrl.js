@@ -110,7 +110,7 @@
 
         vm.init = function () {
             //var toast = toastr.info('page loaded', 'Information');
-
+            hljs.initHighlightingOnLoad();
             //toastr.refreshTimer(toast, 5000);
             //console.log(toast);
             vm.loadData();
